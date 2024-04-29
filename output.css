@@ -721,6 +721,15 @@ video {
   clear: none;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -848,12 +857,12 @@ video {
   height: 100vh;
 }
 
-.w-8 {
-  width: 2rem;
+.w-72 {
+  width: 18rem;
 }
 
-.w-96 {
-  width: 24rem;
+.w-8 {
+  width: 2rem;
 }
 
 .w-\[this-is\\\\\] {
@@ -868,8 +877,8 @@ video {
   width: weird-and-invalid;
 }
 
-.min-w-96 {
-  min-width: 24rem;
+.w-auto {
+  width: auto;
 }
 
 .flex-shrink {
@@ -1208,10 +1217,6 @@ video {
 
 .grid-flow-col-dense {
   grid-auto-flow: column dense;
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .flex-row {
@@ -1868,9 +1873,9 @@ video {
   border-style: none;
 }
 
-.border-black {
+.border-orange-500 {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(249 115 22 / var(--tw-border-opacity));
 }
 
 .bg-\[\#191A33B2\] {
@@ -1885,16 +1890,6 @@ video {
 .bg-orangish {
   --tw-bg-opacity: 1;
   background-color: rgb(255 95 19 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .bg-heroImage {
@@ -2019,6 +2014,10 @@ video {
      object-fit: scale-down;
 }
 
+.p-7 {
+  padding: 1.75rem;
+}
+
 .px-6 {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -2096,11 +2095,6 @@ video {
 
 .text-5xl {
   font-size: 3rem;
-  line-height: 1;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
   line-height: 1;
 }
 
@@ -2687,8 +2681,25 @@ h1 {
 }
 
 @media (min-width: 640px) {
+  .sm\:w-96 {
+    width: 24rem;
+  }
+
+  .sm\:justify-start {
+    justify-content: flex-start;
+  }
+
+  .sm\:text-start {
+    text-align: start;
+  }
+
   .sm\:text-6xl {
     font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  .sm\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -2721,8 +2732,18 @@ h1 {
     display: none;
   }
 
+  .lg\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .lg\:text-\[140px\] {
     font-size: 140px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 

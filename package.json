@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "tailwind-build":"npx tailwindcss -i ./style.css -o ./output.css --watch"
+    "tailwind-build": "npx tailwindcss -i ./style.css -o ./output.css --watch"
   },
   "devDependencies": {
     "tailwindcss": "^3.4.3",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "surge": "^0.23.1"
   }
 }
